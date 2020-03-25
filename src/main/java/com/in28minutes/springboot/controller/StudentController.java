@@ -50,8 +50,9 @@ public class StudentController {
 	}
 	
 	@GetMapping("/about")
-	public String getAboutUs() {
-		return "Mahi"+"Singh";
+	public String getAboutUs(String a) {
+		return a +"Singh";
+
 	}
 
 }
