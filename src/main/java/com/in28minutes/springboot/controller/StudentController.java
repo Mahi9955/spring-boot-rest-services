@@ -46,5 +46,10 @@ public class StudentController {
 			@PathVariable String courseId) {
 		return studentService.retrieveCourse(studentId, courseId);
 	}
+	
+	@GetMapping("/about")
+	public String getAboutUs() {
+		return "Mahi"+"Singh";
+	}
 
 }
