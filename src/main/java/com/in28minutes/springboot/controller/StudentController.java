@@ -38,6 +38,8 @@ public class StudentController {
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path(
 				"/{id}").buildAndExpand(course.getId()).toUri();
 
+		
+		//test purpose
 		return ResponseEntity.created(location).build();
 	}
 
